@@ -70,19 +70,21 @@ jupyter notebook ai_scrapper_api.ipynb
 
 | File | Included | Description |
 |------|----------|-------------|
+| `ai_scrapper_api.ipynb` | ✅ | Main pipeline notebook |
 | `companies_api.csv` | ✅ | Raw API extract |
 | `companies_api_clean.csv` | ✅ | Deduplicated and filtered |
-| `companies_verified.csv` | ✅ | With verified web presence |
-| `companies_meta.csv` | ✅ | Company metadata |
-| `companies_clustered.csv` | ✅ | With cluster assignments |
-| `companies_final.csv` | ✅ | Final cleaned dataset |
 | `clusters_final.html` | ✅ | Interactive UMAP visualisation |
 | `clusters_final_labelled.html` | ✅ | Cluster visualisation with labels |
 | `companies_clean.csv` | ❌ | Excluded — 43MB |
 | `companies_scraped.csv` | ❌ | Excluded — 23MB |
-| `embeddings.npy` | ❌ | Excluded — 20MB, regenerate by running the notebook |
+| `companies_with_websites.csv` | ❌ | Excluded — 5MB |
+| `companies_verified.csv` | ❌ | Excluded — file size |
+| `companies_meta.csv` | ❌ | Excluded — file size |
+| `companies_clustered.csv` | ❌ | Excluded — file size |
+| `companies_final.csv` | ❌ | Excluded — file size |
+| `embeddings.npy` | ❌ | Excluded — 20MB |
 
-> **Note:** To regenerate `embeddings.npy`, run the embedding cell in the notebook. It will recompute from `companies_final.csv` using `sentence-transformers`.
+> **Note:** To regenerate all intermediate files and embeddings, run the notebook from top to bottom with a valid Companies House API key.
 
 ## SIC Codes Covered
 
